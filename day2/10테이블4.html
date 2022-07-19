@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+
+        td{
+            border: 1px solid gray;
+            font-size: 1.2em; 
+            /* 1.2배 */
+        }
+        table{
+            width: 400px;
+        }
+
+        /* 자식 요소 tr 중 1번째 것 찾아서 그것의 * 자식td요소 선택
+            자식 요소 선택자 기호는 > */
+
+        tr:nth-child(1) > td{
+            width: 100px;
+            background-color: bisque;
+        }
+        /* table 3번째 것 찾아서 *자손 td 요소 선택
+            자손 요소 선택자 기호는 공백 */
+
+        tr:nth-child(3) td{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
