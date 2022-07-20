@@ -1,0 +1,75 @@
+/* css 스타일을 별도 파일로 작성 */
+/* 사용하는 html 문서에서는 link 태그로 이 파일을 설정*/
+
+/* @import url('https://fonts.googleapis.com.css2?family=gamja+flower+script'){
+    font-family: 'Gamja Flower', 
+} */
+
+
+table{
+    width: 500px;
+    margin: auto;
+    border-top: 3px solid gray;
+    border-bottom: 3px solid gray;
+    
+}
+
+td{
+    padding: 10px;
+    
+
+}
+
+
+/* tr > td:nth-child(1){
+    text-align: center;
+    background-color: coral;
+    color: white;
+    border-radius: 5px;
+} */
+
+input[type=text] input[type=password] input[type=email]{
+    width: 60%;
+}
+input, select{
+    padding: 6px;
+    border-radius: 6px;
+    border: 1px solid gray;
+}
+
+label.title{
+    /* #cc6699는 #c69 */
+    background-color: #c69;
+    color: white;
+    border-radius: 5px;
+    display: inline-block;
+    width: 80%;
+    text-align: center;
+    padding: 10px;
+    
+}
+
+button{
+    padding: 7px 15px;
+    margin: 7px;
+    background-color: rgb(194, 14, 104);
+    color: white;
+    border: none;
+    font-size: 1.1em;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* pseudo (의사, 유사) 클래스 */
+button:hover{
+    background-color: rgb(200, 80, 104);
+}
+
+tr:last-child > td{
+    text-align: center;
+}
+
+label.mpt:hover{
+    cursor: pointer;
+}
+
