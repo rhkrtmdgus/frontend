@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        'use strict' // 2번 오류가 안 나는 것을 오류가 발생하도록 합니다. (엄근진)
+        var v1 = 456;
+        document.write(v1);
+        document.write('<br>');
+        var v1 = 999;
+        document.write(v1);
+        document.write('<br>');
+        var v2 = 111;
+        document.write(v2);
+        var v3 = '하하하';
+        document.write('<br>' + v3);
+        
+        if(10>5){
+            var v1 = 444;
+            document.write('<br>' + v1); // 3) 다른 언어에서는 {} 안에 선언된 변수는 지역변수
+                                            // 자바스크립트에서는 전역변수로 사용됨
+            let v2 = 555;
+        }
+        document.write('<br>' + v1);
+        document.write('<br>' + v2);
+        
+
+    </script>
+</body>
+</html>
+
+<!-- 
+/* 자바스크립트의 변수 선언 : var , let (중복 선언 방지)
+    1. 데이터 타입 지정 안합니다.
+    2. 같은 변수이름을 중복해서 선언해도 오류 발생 안합니다.
+    3. {   } 블록 지역변수 적용이 안됩니다. 
+    4. 변수를 선언하지 않고 사용해도 오류 발생 안합니다.
+    
+    위의 해결방법으로 ES6(규격화된 자바스크립트버전)에서 let, const(상수) 키워드로 선언합니다.
+    */ -->
