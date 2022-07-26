@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>검색 기능 구현</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h3>검색 기능 구현</h1>
+    <hr><br>
+    <table>
+    <tr>
+        <td><strong>장르</strong></td>
+        <td>
+            <input type="radio" name="gender" value="horror" class="mpt">호러
+            <input type="radio" name="gender" value="romance" class="mpt">로맨스
+            <input type="radio" name="gender" value="action" class="mpt">액션
+            <input type="radio" name="gender" value="sf" class="mpt">SF
+            <input type="radio" name="gender" value="enter" class="mpt">코미디
+            <input type="radio" name="gender" value="male" class="mpt">모험
+            <input type="radio" name="gender" value="female" class="mpt">전쟁
+            <input type="radio" name="gender" checked="checked" value="unknown"
+            class="mpt">모름
+        </td>
+    </tr>
+    
+    
+    </table>
+    
+   <form action="https://www.google.com/search" method="get">
+    <div class="wrap">
+        <div class="search">
+           <input name = "q" type="text" class="searchTerm" placeholder="영화 검색">
+           <button type="submit" class="searchButton">
+             <i class="fa fa-search" style="font-style: normal;">검색</i>
+          </button>
+        </div>
+    </div>
+    </form>
+    <hr style="margin-top: 30px;">
+    <h1>검색 결과</h3>
+</body>
+</html>

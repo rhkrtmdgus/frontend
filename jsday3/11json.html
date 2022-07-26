@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jsday3_open api & json</title>
+    <style>
+        .thumb{
+            border: 2px solid yellow;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 아래의 입력요소 값들은 서버로 보내지 않고 자바스크립트에서 사용할 것이므로
+        form 태그에 포함시키지 않고 id 속성을 사용합니다. -->
+    <p style="margin: 10px;">
+        <label for="">검색어 : </label><input type="text" id = "query">
+        <label for="">page : </label><input type="text" id = "page" value="1" max="50">
+        <label for="">size : </label><input type="text" id = "size" value="10" max="50">
+        <input type="radio" id="accuracy" name = "sort" checked><label for="">정확도순</label>
+        <input type="radio" id="recency"name = "sort"><label for="">최신순</label>
+        <button id = "search" style="padding: 4px 7px; margin-left: 10px;">검색</button>
+    </p>
+    <hr>
+    <h4>검색결과</h4>
+    <p id = "list"></p>
+    <script src = "11openapi.js"></script>
+
+</body>
+</html>
