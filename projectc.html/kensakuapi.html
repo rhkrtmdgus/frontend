@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <p id = "list"></p>
+    <script>
+        const search = function(){
+
+        const xhr = new XMLHttpRequest()
+
+        // 1. http요청 초기화 : method, url
+        xhr.open("GET", "http://kobis.or.kr/kobisopenapi/webservice/rest/movie/searchMovieList.json?key=c01d46133ff6f311fd3696137164d42a&movieNm=괴물")
+        xhr.send();
+        xhr.onload = function(){
+
+        if(xhr.status=200) {
+        let $response = JSON.parse(xhr.response)
+        let results = $response.movieListResult.movieList[3]
+        console.log($response)
+
+        }
+
+
+        }
+    
+    }
+    search()
+
+    </script>
+</body>
+</html>
+
+
+

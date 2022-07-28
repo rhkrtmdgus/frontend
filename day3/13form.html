@@ -5,6 +5,7 @@
     <title>Day3_폼</title>
     <!--  -->
     <link rel="stylesheet" href="13member.css">
+    <script src="../jsday4/14member.js"></script>
 </head>
 
 <body>
@@ -28,7 +29,7 @@
             </tr>
             <tr>
                 <td><label for="lblpassword" class="title mpt">패스워드</label></td>
-                <td><input type="password" name="password" id="lblpassword" minlength="4"></td>
+                <td><input type="password" name="password" id="lblpassword"></td>
 
             </tr>
             <tr>
@@ -84,7 +85,7 @@
                     <input type="submit" value="제출">
                     <input type="reset" value="초기화"> -->
                     <!-- button 디폴트 값이 submit -->
-                    <button>가입하기</button>
+                    <button onclick="valid_check()" type ="button">가입하기</button>
                     <button type="reset">다시쓰기</button>
                 </td>
             </tr>
